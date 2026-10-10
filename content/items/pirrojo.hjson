@@ -1,0 +1,15 @@
+name:"Pirrojo"
+description: "Un material inflamable usado como combustible o munición."
+type:item
+
+color: FF3254
+flammability: 1.5
+explosiveness: 0.5
+radioactivity: 0
+charge: 0
+hardness: 1
+research: "rojozio"
+hiddenOnPlanets: [
+  "erekir",
+  "serpulo"
+]

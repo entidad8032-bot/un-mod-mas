@@ -1,0 +1,15 @@
+name: "Cruse de Amarinium"
+description: "Permite que las tuberias se crusen"
+
+
+type: LiquidJunction
+health: 100
+category: liquid
+hasPower: false
+requirements: [
+  amarinium/5
+]
+research: amarinium-liquid-router
+researchCost: [
+    amarinium/20
+  ]

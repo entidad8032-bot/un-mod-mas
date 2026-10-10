@@ -1,0 +1,22 @@
+planet: rarearth
+name: "Paredes rojas"
+
+description:"Este sector tiene un nuevo mineral que nos podria ser util, y tambien presencia enemiga,
+investiga alguna formade generar energía."
+
+sector: 2
+captureWave: 30
+research: {
+  parent: Sector1
+  objectives: [
+    {
+      type: "SectorComplete",
+      preset: "Sector1"
+    }
+  ]
+}
+difficulty: 3
+overrideLaunchDefaults: true
+addStartingItems: true
+allowLaunchSchematics:true
+#overrideLaunchDefaults: true

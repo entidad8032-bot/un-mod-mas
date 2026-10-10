@@ -1,0 +1,63 @@
+name:"Horno de Amarinium"
+description: "Un horno que combierte rojozio en pirrojo."
+type: GenericCrafter
+category: crafting
+health: 300
+size:2
+
+hasItems: true
+craftTime: 60
+hasPower: true
+consumes: {
+  power: 1.5
+  items: [
+    azultio/1
+    rojozio/1
+  ]
+}
+outputItem: pirrojo/2
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawWarmupRegion
+      suffix: -top
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
+generateEffectChance: 1
+generateEffect: {
+  type: ParticleEffect
+  particles: 3
+  length: 12
+  lifetime: 60
+  cone: 45
+  sizeFrom: 5
+  sizeTo: 2
+  sizeInterp: pow2Out
+  interp: pow2Out
+  colorFrom: 4c0000
+  colorTo: b2474700
+}
+
+research: {
+  parent: horno-verdelium
+  objectives: [
+        {
+            type: "OnSector",
+            preset: "Sector4"
+        }
+    ]
+  requirements: [
+    verdelium/400
+    amarinium/625
+    ]
+}
+requirements: [
+  verdelium/100
+  amarinium/125
+]

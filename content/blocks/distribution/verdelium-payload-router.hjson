@@ -1,0 +1,25 @@
+name: "Sinta enrutadora de Verdelium"
+description:"Distribuye las cargas en otra direcciones."
+type: PayloadRouter
+size: 3
+moveTime: 50
+moveForce: 300
+payloadLimit: 3
+category: units
+requirements: [
+  verdelium/40
+  azultio/30
+]
+research: {
+    parent: "verdelium-payload",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Sector3"
+        }
+    ]
+    requirements:[
+      verdelium/80
+      azultio/60
+    ]
+}

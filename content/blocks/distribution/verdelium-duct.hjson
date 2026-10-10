@@ -1,0 +1,26 @@
+type: Duct
+name:"Ducto de Verdelium"
+description:"Transporta objetos de un lugar a otro."
+hasShadow: true
+health: 90
+speed: 10
+armored: false
+bridgeReplacement: verdelium-bridge
+junctionReplacement: verdelium-junction
+
+requirements: [
+  verdelium/1
+]
+category: distribution
+research: {
+    parent: "core-j1",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Sector1"
+        }
+    ]
+}
+researchCost: [
+    verdelium/15
+  ]

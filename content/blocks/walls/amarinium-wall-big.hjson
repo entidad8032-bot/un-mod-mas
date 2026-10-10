@@ -1,0 +1,15 @@
+type:Wall
+name:"Muro de amarinium grande"
+armor:10
+description:"Protege extructuras de proyectiles enemigos."
+health: 1600
+size: 2
+category: defense
+requirements: [
+  amarinium/40
+]
+research:"amarinium-wall-small"
+
+researchCost: [
+    amarinium/80
+]

@@ -1,0 +1,55 @@
+name: "constructor basico"
+description: "Una estructura que fabrica unidades basicas."
+type: UnitFactory
+
+health: 500
+size: 3
+consumes: {
+  power: 1.6
+}
+plans: [
+  {
+    unit: spiderblue1
+    time: 900
+    requirements: [
+      verdelium/30
+      azultio/40
+    ]
+  }
+  {
+    unit: aereo1
+    time: 750
+    requirements: [
+      verdelium/20
+      azultio/30
+    ]
+  }
+  {
+    unit: kamicaze1
+    time: 950
+    requirements: [
+      verdelium/40
+      azultio/50
+      rojozio/75
+    ]
+  }
+]
+requirements: [
+  verdelium/175
+  azultio/150
+]
+category: units
+research: {
+  parent: core-j1
+  objectives: [
+    amarinium-generator
+    {
+      type: OnSector
+      preset: Sector3
+    }
+  ]
+  requirements: [
+    verdelium/525
+    azultio/450
+  ]
+}

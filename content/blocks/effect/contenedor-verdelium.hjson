@@ -1,0 +1,27 @@
+name: "Contenedor de Verdelium"
+description: "Almacena objetos en su interior, solo se puede acceder a su contenido con descargadores."
+type:StorageBlock
+scaledHealth: 475
+size:2
+category: effect
+itemCapacity:300
+
+requirements:[
+  verdelium/40
+  amarinium/30
+  azultio/20
+]
+research: {
+    parent: "descargador-azultio",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Sector4"
+        }
+    ]
+    requirements:[
+      verdelium/700
+      azultio/700
+      amarinium/700
+    ]
+}

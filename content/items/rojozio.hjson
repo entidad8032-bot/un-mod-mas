@@ -1,0 +1,17 @@
+name:"Rojozio"
+description: "Un mineral rojo carmesí usado como combustible de maquinas,
+tambien se puede refinar para hacerlo combustible líquido.
+Altamente volatil."
+type:item
+cost: 1
+color: 7F1919
+flammability: 0.95
+explosiveness: 0.25
+radioactivity: 0
+charge: 0
+hardness: 1
+research: "azultio"
+hiddenOnPlanets: [
+  "erekir",
+  "serpulo"
+]

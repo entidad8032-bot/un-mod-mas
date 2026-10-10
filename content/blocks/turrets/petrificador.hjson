@@ -1,0 +1,115 @@
+name:"Petrificador"
+description:"Dispara un rasho que petrifica a los enemigos."
+type:ItemTurret
+size:3
+health: 1000
+range:150
+outlineColor: 006633
+targetAir: true
+targetGround: true
+category: turret
+rotateSpeed: 2
+inaccuracy: 0
+
+recoil: 1
+
+//buildCostMultiplier: 1
+
+
+hasLiquids: true
+liquidCapacity: 50
+coolantMultiplier:1.4
+consumes:{
+  coolant:{
+    amount:0.2
+    optional: true
+  }
+}
+
+shootSound: spark
+
+reload: 180
+shoot:{
+  firstShotDelay: 70 
+}
+ammoPerShot:5
+ammoTypes : {
+  amarinium : {
+    type: LaserBulletType
+    damage: 60
+    length: 160
+    width: 14
+    lifetime: 15
+    status: petrificado
+    statusDuration: 50
+    
+    sideLength: 20
+    sideWidth: 1.5
+    sideAngle: 45
+    chargeEffect: {
+      //agujero 1
+      type:ParticleEffect
+      particles: 15
+      lifetime: 60
+      length: 32
+      sizeFrom: 2.5
+      sizeTo: 0
+      cone:45
+      useRotation:true
+      baseRotation: 0
+      colorFrom: "ffff00"
+      colorTo: "ffffff"
+    }
+    
+    colors: ["f2ffb2", "3f992d", "99cc66"]
+    healPercent: 0
+    
+    hitEffect: hitLancer
+    
+  }
+}
+drawer:{
+  type: DrawTurret
+  basePrefix: -base
+  parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      mirror: false
+      progress: recoil
+      bottom:true
+      moveY: -4
+      moveX:0
+      x: 0
+      y: 0
+    }
+    {
+      type: RegionPart
+      suffix: -top
+      mirror: false
+    }
+  ]
+}
+
+requirements : [
+  azultio/100
+  amarinium/50
+  verdelium/50
+]
+category :  turret
+research: {
+  parent: "range",
+  objectives: [
+    pirrojo
+    fueguito
+    {
+      type: "OnSector",
+      preset: "Sector4"
+    }
+  ]
+}
+researchCost: [
+  azultio/1200
+  amarinium/1000
+  verdelium/1200
+  ]

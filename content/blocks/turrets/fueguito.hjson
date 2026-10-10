@@ -1,0 +1,98 @@
+name:"Fueguito"
+description:"Dispara rafagas de fuego a los enemigos"
+type:ItemTurret
+size:2
+health: 800
+range:100
+outlineColor: 006633
+targetAir: false
+targetGround: true
+category: turret
+rotateSpeed: 5
+inaccuracy: 10
+xRand: 0
+recoil: 0.5
+//shootSound: shoot
+buildCostMultiplier: 1
+basePrefix: -base
+
+hasLiquids: true
+liquidCapacity: 60
+coolantMultiplier:1.5
+consumes:{
+  coolant:{
+    amount:0.6
+    optional: true
+  }
+}
+shootCone: 30
+reload:4
+ammoTypes: {
+  rojozio: {
+    lifetime : 30
+    speed: 3
+    type: BulletType
+    ammoMultiplier: 2
+    reloadMultiplier: 0.5
+    damage : 20
+    pierce: true
+    pierceBuilding: true
+    status: burning
+    statusDuration: 160
+    
+    // Generación de incendios en el terreno
+    incendAmount: 1
+    incendSpread: 8
+    incendChance: 0.3
+    
+    // Efectos visuales de llama
+    shootEffect: shootSmallFlame
+    hitEffect: hitFlameSmall
+    despawnEffect: none
+    keepVelocity: false
+  }
+  pirrojo: {
+    lifetime : 60
+    speed: 4
+    type: BulletType
+    ammoMultiplier: 3
+    reloadMultiplier: 0.45
+    damage : 30
+    pierce: true
+    pierceBuilding: true
+    status: melting
+    statusDuration: 190
+    
+    // Generación de incendios en el terreno
+    incendAmount: 1
+    incendSpread: 7
+    incendChance: 0.4
+    
+    // Efectos visuales de llama
+    shootEffect: shootSmallFlame
+    hitEffect: hitFlameSmall
+    despawnEffect: none
+    keepVelocity: false
+  }
+}
+
+
+requirements : [
+  azultio/100
+  amarinium/75
+]
+category :  turret
+research: {
+    parent: "range",
+    objectives: [
+        bocina
+        {
+            type: "OnSector",
+            preset: "Sector4"
+        }
+    ]
+}
+researchCost: [
+  azultio/700
+  amarinium/500
+  ]

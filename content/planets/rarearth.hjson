@@ -1,0 +1,148 @@
+generator: PlanetGenerator
+parent: sun
+name: "Rarearth"
+iconColor: "2ef605",
+orbitRadius: 90
+orbitSpacing: 3
+minZoom: 1
+
+hasAtmosphere: true,
+updateLighting: true,
+atmosphereRadIn: 0.01,
+atmosphereRadOut: 0.2,
+atmosphereColor: "f5f5d6d5",
+drawOrbit: true,
+accessible: true,
+alwaysUnlocked: true,
+defaultCore: "core-j1",
+sectorSeed: 50,
+startSector: 1,
+sectorSize: 1,
+clearSectorOnLose: false,
+allowSectorInvasion: false,
+allowLaunchToNumbered: false,
+radius: 1.2
+
+hiddenItems: [
+  "copper",
+  "lead",
+  "scrap",
+  "graphite",
+  "coal",
+  "titanium",
+  "thorium",
+  "silicon",
+  "plastanium",
+  "phase-fabric",
+  "surge-alloy",
+  "spore-pod",
+  "sand",
+  "blast-compound",
+  "pyratite",
+  "metaglass",
+  "beryllium",
+  "oxide",
+  "tungsten",
+  "carbide",
+  "fissile-matter",
+  "dormant-cyst"
+]
+
+cloudMesh:[
+  {
+    type: HexSkyMesh
+    planet: rarearth
+    seed: 14
+    speed: 14
+    radius: 0.1
+    divisions: 6
+    color: "2a751bb0"
+    octaves: 2
+    persistence: 0.8
+    scl: 1
+    thresh: 0.5
+  }
+  {
+    type: HexSkyMesh
+    planet: rarearth
+    seed: 12
+    speed: 8
+    radius: 0.11
+    divisions: 5
+    color: "26e200b0"
+    octaves: 2
+    persistence: 0.9
+    scl: 1.1
+    thresh: 0.5
+  }
+  {
+    type: HexSkyMesh
+    planet: rarearth
+    seed: 10
+    speed: 2
+    radius: 0.12
+    divisions: 4
+    color: "bef0b4b0"
+    octaves: 2
+    persistence: 0.8
+    scl: 1
+    thresh: 0.5
+  }
+]
+
+mesh:[
+  {
+    // capa 1 agua
+    type: "NoiseMesh"
+    planet: "rarearth"
+    color1: "9026dda0"
+    color2: "7f3eada5"
+    seed: 20
+    divisions: 5
+    radius: 1.1
+    octaves: 3
+    persistence:0.5
+  }
+  {
+    // capa 2 playas
+    type: "NoiseMesh"
+    planet: "rarearth"
+    color1: "f282ea"
+    color2: "e305ec"
+    seed: 40
+    divisions: 5
+    radius: 1.06
+    octaves: 3
+    persistence: 0.6
+    scale: 1.5
+    mag: 0.8
+  }
+  {
+    // capa 3 rojozio
+    type: "NoiseMesh"
+    planet: "rarearth"
+    color1: "b99503"
+    color2: "f13a76"
+    seed: 40
+    divisions: 5
+    radius: 1.08
+    octaves: 3
+    persistence: 0.6
+    scale: 1.35
+    mag: 0.8
+  }
+  {
+    // capa 4 verdelium
+    type: "NoiseMesh"
+    planet: "rarearth"
+    color1: "2bfc4c"
+    color2: "02a950"
+    seed: 50
+    divisions: 5
+    radius: 1
+    octaves: 3
+    persistence: 0.7
+    scale: 1.35
+    mag: 1
+  }
+]

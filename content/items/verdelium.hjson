@@ -1,0 +1,15 @@
+name: "Verdelium"
+description: "Un mineral verde usado para diversos mecanismos"
+type:item
+cost: 1
+color: A5FF4C
+flammability: 0
+explosiveness: 0
+radioactivity: 0
+charge: 0
+hardness: 1
+research: core-j1
+hiddenOnPlanets: [
+  "erekir",
+  "serpulo"
+]

@@ -1,0 +1,64 @@
+name: "Generador de verdelium"
+description: "Genera energía consumiendo rojozio."
+type: ConsumeGenerator
+size: 2
+health: 320
+hasLiquids: false
+canOverdrive: false
+itemDuration: 140
+baseExplosiveness: 0
+powerProduction: 2.2
+category: power
+
+generateEffectChance: 2
+generateEffect: {
+  type: ParticleEffect
+  particles: 3
+  length: 12
+  lifetime: 60
+  cone: 45
+  sizeFrom: 5
+  sizeTo: 2
+  sizeInterp: pow2Out
+  interp: pow2Out
+  colorFrom: 4c0000
+  colorTo: b2474700
+}
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawWarmupRegion
+      suffix: -top
+    }
+    {
+      type: DrawDefault
+    }
+  ]
+}
+
+consumes: {
+  items: [
+    rojozio/1
+  ]
+}
+requirements: [
+  verdelium/150
+  azultio/125
+]
+
+research: {
+  parent: core-j1
+  objectives: [
+    {
+      type: OnSector
+      preset: Sector2
+    }
+  ]
+  requirements: [
+    verdelium/250
+    azultio/200
+  ]
+}
+

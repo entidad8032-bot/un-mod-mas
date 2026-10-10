@@ -1,0 +1,24 @@
+type:AutoDoor
+name:"Puerta de Amarinium"
+armor:8
+description:"Permite que las unidades pasen, solo se abre cuando una unidad esta cerca."
+health: 1350
+size: 2
+category: defense
+requirements: [
+  amarinium/30
+  verdelium/20
+]
+research: {
+    parent: "amarinium-wall-small",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Sector3"
+        }
+    ]
+}
+researchCost: [
+    amarinium/30
+    verdelium/20
+]

@@ -1,0 +1,97 @@
+name:"Sodio"
+description: "Dispara rafagas de balas a objetivos aéreos."
+type:ItemTurret
+size:2
+health: 900
+range:160
+outlineColor: 0C004C
+targetAir: true
+targetGround: false
+category: turret
+rotateSpeed: 7
+inaccuracy: 12
+xRand: 0
+recoil: 0.6
+shootSound: shoot
+buildCostMultiplier:1
+reload:3.5
+hasLiquids: true
+liquidCapacity: 30
+coolantMultiplier:1.5
+consumes:{
+  coolant:{
+    amount:0.5
+    optional: true
+  }
+}
+
+ammoTypes : {
+  verdelium : {
+    lifetime : 64
+    speed: 2.5
+    
+    type: BasicBulletType
+    ammoMultiplier: 2
+    reloadMultiplier: 0.5
+    shootEffect: shootSmall
+    damage : 30
+    width: 7
+    height : 7
+    splashDamage: 15
+    splashDamageRadius: 16
+    collidesGround: false
+  }
+  azultio : {
+    lifetime : 74
+    speed: 3
+    type: BasicBulletType
+    ammoMultiplier: 3
+    reloadMultiplier: 0.4
+    shootEffect: shootSmall
+    damage : 40
+    width: 8
+    height : 8
+    rangeChange: 60
+    splashDamage: 20
+    splashDamageRadius: 16
+    collidesGround: false
+    fragBullets : 2
+    fragBullet:{
+      width: 3
+      damage: 5
+      height: 3
+      shrinkY: 2
+      lifetime: 20
+      backColor:  2be901
+      frontColor:  593AB8
+    }
+  }
+}
+drawer:{
+ type: DrawTurret
+ basePrefix: -base
+ parts: [
+  {
+  type: RegionPart
+  suffix: -part
+  mirror: true
+  moveY: 0
+  moveX: -2
+  x: 0
+  y: 0
+  }
+ ]
+}
+
+requirements : [
+  verdelium/75
+  azultio/75
+]
+category :  turret
+research: {
+  parent: bank
+  requirements: [
+    verdelium/125
+    azultio/125
+    ]
+}

@@ -1,0 +1,14 @@
+name: "Cruse de Verdelium"
+description: "Permite crusar objetos de un ducto a otro"
+type: Junction
+health: 50
+speed: 12
+capacity: 5
+requirements: [
+  verdelium/5
+] 
+category: distribution
+research: verdelium-router
+researchCost: [
+    verdelium/20
+  ]

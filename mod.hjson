@@ -1,4 +1,4 @@
-"displayName" : "Un mod mas",
+"displayName" : "Un mod mas (Rarearth)",
 "name": "creando ando",
 
 "author":"entidad-8032",
@@ -10,7 +10,7 @@ este mod añade [#ffff00[]]varias cosas, [#ffffff[]]entre ellas:
  descarga este mod ahora mismo! y no olvides ir al canal de YouTube del creador!
 Canal de YouTube: [#e90000[]]https://youtube.com/@entidad-8032?si=VeybOuuoiYihtQWS
 ''',
-subtitle: Un mod que añade varias cosas!
+subtitle:"Un mod que añade varias cosas!"
 version: "1.6.7"
 "minGameVersion": 150.0,
 "hidden": false

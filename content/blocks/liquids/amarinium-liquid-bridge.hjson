@@ -1,0 +1,15 @@
+name: "Puente de liquidos"
+description:"Transporta liquidos sobre el terreno."
+type: LiquidBridge
+health: 100
+liquidCapacity: 10
+category: liquid
+hasPower: false
+range: 6
+requirements: [
+  amarinium/10
+]
+research: amarinium-pip
+researchCost: [
+  amarinium/20
+  ]

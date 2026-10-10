@@ -1,0 +1,110 @@
+name:"Range"
+description: "Dispara balas de largo alcance, pero solo a objetivos terrestres."
+type:ItemTurret
+size:2
+health: 1000
+range:175
+outlineColor: 006633
+targetAir: false
+targetGround: true
+category: turret
+rotateSpeed: 2
+inaccuracy: 2
+xRand:0
+recoil: 0.7
+shootSound: shoot
+buildCostMultiplier: 1
+basePrefix : -base 
+hasLiquids: true
+liquidCapacity: 30
+coolantMultiplier:1.5
+consumes:{
+  coolant:{
+    amount:0.5
+    optional: true
+  }
+}
+
+ammoTypes : {
+  azultio : {
+    lifetime : 87
+    speed: 2.0
+    type: ArtilleryBulletType
+    ammoMultiplier: 4
+    reloadMultiplier: 0.2
+    shootEffect: shootSmall
+    width: 10
+    damage : 50
+    height : 10
+    fragBullets : 1
+    #shrinkX: -1.1
+    #shrinkY: -1.1
+    #shrinkInterp: sine
+    fragBullet:{
+      width: 3
+      damage: 5
+      height: 3
+      shrinkY: 1
+      lifetime: 20
+      backColor:  2be901
+      frontColor:  593AB8
+    }
+  }
+  amarinium : {
+    lifetime : 67
+    speed: 2.5
+    type: ArtilleryBulletType
+    ammoMultiplier: 2
+    reloadMultiplier: 0.3
+    shootEffect: shootSmall
+    width: 10
+    damage : 40
+    height : 10
+    rangeChange: -50
+    fragBullets : 4
+    fragBullet:{
+      width: 3
+      damage: 10
+      height: 3
+      shrinkY: 1
+      lifetime: 20
+      backColor:  2be901
+      frontColor:  593AB8
+    }
+  }
+  rojozio: {
+    lifetime : 96
+    speed: 1.9
+    type: ArtilleryBulletType
+    ammoMultiplier: 7
+    reloadMultiplier: 0.1
+    shootEffect: shootSmall
+    width: 10
+    #damage : 70
+    height : 10
+    #shrinkX: -1.2
+    #shrinkY: -1.2
+    #shrinkInterp: sine
+    fragBullets : 0
+    splashDamage: 70
+    splashDamageRadius: 64,
+    hitEffect: flakExplosion
+    despawnEffect: flakExplosion
+    status: blasted
+    statusDuration: 25
+  }
+}
+
+
+requirements : [
+  verdelium/100
+  azultio/100
+]
+category : turret
+research: {
+  parent: bank
+  requirements: [
+    verdelium/200
+    azultio/200
+    ]
+}

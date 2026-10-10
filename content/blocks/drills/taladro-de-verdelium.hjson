@@ -1,0 +1,41 @@
+type: Drill
+name: "Taladro de verdelium"
+description: "Un taladro barato que extrae minerales."
+category: production
+size: 2
+health: 230
+itemCapacity: 7
+hasLiquids: true
+liquidCapacity: 30
+consumes:{
+  liquid:{
+    liquid: violetio
+    amount: 0.2
+    optional: true
+    booster: true
+  }
+}
+liquidBoostIntensity: 1.5
+
+drillTime: 400
+hardnessDrillMultiplier: 25
+tier: 1
+
+requirements: [
+  verdelium/20
+]
+
+research: {
+  parent: core-j1
+  objectives: [
+    {
+      type: OnSector
+      preset: Sector1
+    }
+  ]
+}
+
+researchCost: [
+  verdelium/20
+]
+

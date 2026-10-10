@@ -1,0 +1,11 @@
+name: "Azultio"
+description: "Un mineral azul usado para bloques y unidades."
+type:item
+cost: 2
+color: 89D6E5
+flammability: 0
+explosiveness: 0
+radioactivity: 0
+charge: 0
+hardness: 1
+research: "verdelium"

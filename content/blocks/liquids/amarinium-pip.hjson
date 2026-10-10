@@ -1,0 +1,23 @@
+name: "Tuberia de Amarinium"
+description: "Transporta liquidos de un lugar a otro."
+type: Conduit
+health: 30
+hasPower: false
+
+requirements: [
+  amarinium/2
+]
+leaks: true
+liquidCapacity: 10
+liquidPressure: 1
+botColor: 660000
+category: liquid
+
+junctionReplacement: amarinium-liquid-junction
+bridgeReplacement: amarinium-liquid-bridge
+
+research: amarinium-pump
+
+researchCost: [
+    amarinium/10
+  ]

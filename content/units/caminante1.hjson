@@ -1,0 +1,84 @@
+name: "Caminante"
+description:" Unidad de apoyo, puede curar aliados y construir."
+type: mech
+
+legacy:true
+
+speed: 1.2
+hitSize: 12
+health: 400
+faceTarget: true
+armor: 3
+range: 100
+rotateSpeed: 3
+outlineColor: 0c004c
+mechFrontSway: 0.3
+mechSideSway: 0.6
+mechStepParticles: true
+mechStepShake: 0
+mechLegColor: 32cc14
+mechStride:5
+allowLegStep: true
+hovering: false
+
+targetAir: true
+
+canBoost:true
+boostSpeed:1
+
+controller: RebuildAI
+commandable:true
+
+itemCapacity: 25
+buildSpeed: 1.25
+mineSpeed: 6
+mineTier: 1
+buildRange: 150
+mineRange: 80
+
+weapons: [
+  {
+    name: caminante1-weapon
+    x: 7
+    y: 0
+    mirror: true
+    shoot: {
+      type: ShootPattern
+      shots: 1
+      shotDelay: 2
+    }
+    top: false
+    rotate: false
+    reload: 20
+    recoil: 1
+    shootSound: shootBig
+    ejectEffect: none
+    bullet: {
+      type: BasicBulletType,
+      speed: 5
+      lifetime: 30
+      damage: 15
+      width: 7
+      height: 10
+      frontColor: b2afb3
+      backColor: d5d2d6
+      shootEffect: "shootSmall"
+      smokeEffect: "shootSmallSmoke"
+      ammoMultiplier: 5
+      collidesTiles: true
+      healPercent:3.5
+      collidesTeam:true
+      explodeRange: 1
+      splashDamageRadius:8
+      splashDamage: 20
+      hitEffect: pointHit
+    }
+  }
+]
+research: {
+  parent: reconstructor-a
+	requirements: [
+    azultio/300
+    verdelium/200
+    ]
+	}

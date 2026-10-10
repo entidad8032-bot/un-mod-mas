@@ -1,0 +1,14 @@
+name: "Violetio"
+description: "Un liquido violeta espeso"
+cache: water
+barColor: 7904d0
+color: b627f7
+
+effect: wet
+flammability: 0
+temperature: 0.5
+viscosity: 0.6
+//coolant: true
+heatCapacity: 0.7
+gas: false
+research: verdelium

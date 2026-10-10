@@ -1,0 +1,86 @@
+name:"Carabovo"
+description:"Dispara rafagas de energia que dañan a los enemigos."
+type:PowerTurret
+size:2
+health: 800
+range:120
+outlineColor: 006633
+targetAir: true
+targetGround: true
+category: turret
+rotateSpeed: 7
+inaccuracy: 0
+
+recoil: 0.6
+
+//buildCostMultiplier: 1
+
+
+hasLiquids: true
+liquidCapacity: 30
+coolantMultiplier:1.5
+consumes:{
+  power: 1
+  coolant:{
+    amount:0.5
+    optional: true
+  }
+}
+
+shootSound: shoot
+shoot:{
+  //type: ShootSpread
+  //shots: 3
+  //spread: 12
+  shots: 3
+  shotDelay:2
+}
+reload: 50
+shootType : {
+  type: BasicBulletType
+  speed: 5.3
+  damage: 30
+  lifetime: 30
+  width: 16
+  height: 14
+  knockback:3
+  frontColor: ffffff
+  backColor: 84f4ff
+  hitEffect: hitBulletColor
+  despawnEffect: hitBulletColor
+}
+drawer:{
+ type: DrawTurret
+ basePrefix: -base
+ parts: [
+  {
+  type: RegionPart
+  suffix: -part
+  mirror: true
+  progress: recoil
+  moveY: 0
+  moveX: -2
+  x: 0
+  y: 0
+  }
+ ]
+}
+
+requirements : [
+  azultio/75
+  amarinium/50
+]
+category :  turret
+research: {
+    parent: "sodio",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Sector4"
+        }
+    ]
+}
+researchCost: [
+  azultio/700
+  amarinium/700
+  ]

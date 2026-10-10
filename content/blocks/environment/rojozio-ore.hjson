@@ -1,0 +1,8 @@
+{
+"type": "OreBlock",
+"oreDefault": true,	
+"oreScale": 30.4,
+"oreThreshold": 0.982,
+"variants": 2,
+"itemDrop": "rojozio"
+}

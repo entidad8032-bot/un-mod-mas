@@ -1,0 +1,32 @@
+name: "Sanador de azultio"
+description: "Repara estructuras cercanas."
+type: MendProjector
+size: 2
+health: 500
+category: effect
+hasItems: false
+range: 96
+healPercent: 12
+reload: 120
+
+baseColor:ffff00
+phaseColor:ff0000
+#color:ffff00
+
+
+consumes: {
+  power: 1.4
+}
+
+requirements: [
+  verdelium/20
+  azultio/80
+]
+
+research: {
+  parent: core-j1
+  requirements: [
+    verdelium/40
+    azultio/160
+  ]
+}

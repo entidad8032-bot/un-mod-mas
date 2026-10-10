@@ -1,0 +1,25 @@
+name: "Sinta de Verdelium"
+description: "Transporta cargas de un lugar a otro"
+type: PayloadConveyor
+size: 3
+moveTime: 50
+moveForce: 300
+payloadLimit: 3
+category: units
+requirements: [
+  verdelium/20
+  azultio/15
+]
+research: {
+    parent: "constructor-a",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Sector3"
+        }
+    ]
+    requirements:[
+      verdelium/40
+      azultio/30
+    ]
+}

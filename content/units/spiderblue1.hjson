@@ -1,0 +1,91 @@
+name: "Araña"
+description: "Una unidad de largo alcance con daño moderado. Es debil, recomendable usarla con otras unidades de apoyo."
+armor: 2
+speed: 1.5
+accel: 0.1
+buildSpeed: 0
+health: 380
+drawCell: true
+itemCapacity: 10
+isEnemy: true
+outlineColor: 0C004C
+type: legs
+rotateSpeed: 3
+
+flying: false
+hitSize: 14
+targetAir: true
+targetGround: true
+
+legMoveSpace: 1
+legMaxLength: 1.3
+legMinLength: 0.4
+legLengthScl: 1
+legForwardScl: 0.8
+legPhysicsLayer: true
+
+legGroupSize: 2
+legCount: 4
+legExtension: 0
+legContinuousMove: false
+lockLegBase: false
+rippleScale: 0.2
+legBaseOffset: 5
+legLength: 16
+
+legSplashDamage: 0
+groundLayer: 70
+hovering: true
+stepShake: 0.0
+
+weapons: [
+  {
+  name: spiderblue1-weapon
+  minWarmup: 0.50
+  mirror: false
+  x: 0
+  y: 0
+  reload: 30
+	outline: true
+	shake: 0
+	top: true
+	ejectEffect: shootSmall
+	rotate: true
+	rotationLimit: 50
+	rotateSpeed: 2
+	shootSound: shoot
+	shootY: 5
+  bullet: {
+	  type: BasicBulletType
+	  width: 6
+  	shrinkX: 0
+  	height: 6
+  	shrinkY: 0
+  	speed: 6
+  	drag: 0.02
+  	damage: 20
+  	#splashDamage: 10
+  	#splashDamageRadius: 4
+  	lifetime: 25
+	//	backColor: 1a1a1a
+	//	frontColor: 525252
+	  hitEffect: none
+
+	  despawnEffect: none
+	  // trailColor: ffdb7f
+	  // trailChance: -2
+	  // trailWidth: 3.5
+	  // trailLength: 7
+	
+  	fragBullets: 0
+  	
+    }
+  }
+  ]
+research: {
+  parent: constructor-a
+	requirements: [
+    azultio/150
+    verdelium/100
+    ]
+	}

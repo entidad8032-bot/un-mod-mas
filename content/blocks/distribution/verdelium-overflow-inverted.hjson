@@ -1,0 +1,15 @@
+name:"Compuerta de subdesvordamiento"
+description:"Mueve objetos a los al frente cuando los lados estan llenos."
+type: OverflowGate
+health: 100
+invert: true
+requirements: [
+  verdelium/3
+  azultio/3
+] 
+category: distribution
+research: verdelium-overflow
+researchCost: [
+    verdelium/50
+    azultio/50
+  ]

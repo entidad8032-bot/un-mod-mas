@@ -1,0 +1,17 @@
+name: "Petrificado"
+color: 096e16
+effect: {
+  type: ParticleEffect,
+  particles: 5
+  lifetime: 15
+  length: 3
+  sizeFrom: 3
+  sizeTo: 0
+  colorFrom: "23b347",
+  colorTo: "d7ff62"
+  cone: 360
+        },
+#damage: 0.03
+damageMultiplier: 0
+reloadMultiplier: 0
+speedMultiplier: 0

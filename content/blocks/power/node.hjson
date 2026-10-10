@@ -1,0 +1,19 @@
+name: "Nodo de energia"
+description: "Un nodo que transporta energia."
+type: PowerNode
+size: 1
+health: 100
+maxNodes: 10
+laserRange: 8
+laserColor1: fff46c
+laserColor2: 5e2100
+category: power
+requirements: [
+  verdelium/10
+  azultio/10
+]
+research: verdelium-generator
+researchCost: [
+    verdelium/100
+    azultio/100
+]

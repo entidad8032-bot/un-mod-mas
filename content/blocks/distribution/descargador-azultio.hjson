@@ -1,0 +1,23 @@
+name:"Descargador de Azultio"
+description:"Descarga objetos de los bloques."
+type: Unloader
+health: 120
+itemCapacity: 10
+requirements: [
+  amarinium/5
+  azultio/10
+] 
+category: effect
+research: {
+    parent: verdelium-bridge
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Sector4"
+        }
+    ]
+}
+researchCost: [
+    amarinium/200
+    azultio/200
+  ]

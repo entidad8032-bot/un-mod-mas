@@ -1,0 +1,91 @@
+name: "Aerial bad"
+description: "Una unidad aerea que dispara balas perforantes"
+type: flying
+lowAltitude: true
+speed: 4.5
+accel: 0.1
+drag: 0.2
+flying: true
+health: 750
+hitSize: 10
+armor: 6
+itemCapacity: 10
+outlineColor: 0C004C
+engineOffset: 5.5
+faceTarget: true
+
+controller: FlyingAI
+targetFlags: [
+  generator
+  factory
+  core
+]
+
+range: 32
+weapons: [
+  {
+    name: aereo1-gun
+    mirror: false
+    x: 0
+    y: 0
+    shootY: 4
+    layerOffset: -1
+    reload: 25
+    recoil: 0
+    inaccuracy: 2
+    shootSound: shootSmall
+    bullet: {
+      type: BasicBulletType
+      speed: 6
+      lifetime: 20
+      damage: 30
+      pierce: true
+      pierceBuilding: true
+      pierceCap: 3
+      width: 8
+      height: 12
+      frontColor: 92ff5f
+      backColor: ff2121
+      despawnHit: true
+      despawnEffect: none
+      
+    }
+  }
+]
+
+engines: [
+  //arriba
+  {
+    x: -8.6
+    y: -3.5
+    radius: 2
+    rotation: 225
+  }
+  {
+    x: 8.6
+    y: -3.5
+    radius: 2
+    rotation: 315
+  }
+  //abajo
+  {
+    x: -8.5
+    y: -6.7
+    radius: 2
+    rotation: 225
+  }
+  {
+    x: 8.5
+    y: -6.7
+    radius: 2
+    rotation: 315
+  }
+]
+
+research: {
+  parent: reconstructor-a
+	requirements: [
+    azultio/100
+    verdelium/150
+    ]
+	}

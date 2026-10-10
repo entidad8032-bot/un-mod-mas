@@ -1,0 +1,53 @@
+name: "Dron bot"
+description: Una unidad aerea de apoyo encargada de construir, minar y protegerel núcleo.
+type: flying
+
+controller: BuilderAI
+//defaultCommand: rebuild
+
+health: 400
+armor: 5
+speed: 3.85
+accel: 0.1
+drag: 0.04
+flying: true
+isEnemy: false
+hitSize: 8
+itemCapacity: 50
+
+buildSpeed: 1.25
+mineSpeed: 6.5
+mineTier: 1
+buildRange: 200
+mineRange: 100
+
+coreUnitDock: true
+alwaysUnlocked: true
+targetPriority: -2
+
+engines: [
+  {
+    x: -5
+    y: 5
+    radius: 2.5
+    rotation: 135
+  }
+  {
+    x: 5
+    y: 5
+    radius: 2.5
+    rotation: 45
+  }
+  {
+    x: -5
+    y: -5
+    radius: 2.5
+    rotation: 225
+  }
+  {
+    x: 5
+    y: -5
+    radius: 2.5
+    rotation: 315
+  }
+]

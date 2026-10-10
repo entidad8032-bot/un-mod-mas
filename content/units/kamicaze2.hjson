@@ -1,0 +1,100 @@
+name: "Exploding-health"
+description: "Una unidad mas fuerte que explota en contacto con otra unidad o extructura, util contra [yellow]defensas[white]"
+
+type: tank
+controller: SuicideAI
+
+hitSize: 18
+treadPullOffset: 0
+treadFrames: 8
+omniMovement: false,
+faceTarget: false,
+targetGround: true
+
+targetBuildingsMobile: true
+autoFindTarget: true
+
+health: 1500
+armor: 4
+speed: 1.4
+rotateSpeed: 2.4
+itemCapacity: 0
+outlineColor: "44413c"
+drawLayer: 59
+treadRects: [
+  {
+    x: 8
+    y: -32
+    width: 16
+    height: 64
+  }
+]
+
+targetBuildings: true
+range: 8
+weapons: [
+  {
+    name: kamicaze2-gun
+    reload: 20
+    shootCone: 180
+    ejectEffect: none
+    shootSound: explosion
+    x: 0
+    y: 0
+    mirror: false
+    
+    targetGround: true
+    shootAndMove: true
+    shootOnDeath: true
+    shoot: {
+      firstShotDelay: 120 
+    }
+    parts: [
+      {
+        type: RegionPart
+        suffix: "-glow"
+        progress: charge
+        color:"00000000"
+        colorFrom: "00000000"
+        colorTo: "ffffffff"
+        blending: additive
+      }
+    ]
+    bullet: {
+      type: BombBulletType
+      rangeOverride: 16
+      speed: 0
+      lifetime: 1
+      #damage:100
+      splashDamage: 500
+      splashDamageRadius: 80
+      //instantDisappear: true
+      collides: true
+      collidesTiles: true
+      collidesGround: true
+      hittable: false
+      killShooter: true
+      hitEffect: massiveExplosion
+      despawnEffect: massiveExplosion
+      fragBullets : 7
+      fragBullet:{
+        type:BasicBulletType
+        width: 5
+        damage: 30
+        height: 5
+        shrinkY: 2
+        lifetime: 60
+        backColor:  2be901
+        frontColor:  593AB8
+      }
+    }
+  }
+]
+research: {
+  parent: reconstructor-a
+	requirements: [
+    azultio/300
+    verdelium/300
+    amarinium/200
+    ]
+	}

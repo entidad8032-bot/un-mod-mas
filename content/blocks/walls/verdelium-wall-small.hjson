@@ -1,0 +1,22 @@
+type:Wall
+name:"Muro de verdelium"
+armor:4
+description:"Protege extructuras de proyectiles enemigos"
+health: 600
+size: 1
+category: defense
+requirements: [
+  verdelium/20
+]
+research: {
+    parent: "bank",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Sector1"
+        }
+    ]
+}
+researchCost: [
+    verdelium/40
+]

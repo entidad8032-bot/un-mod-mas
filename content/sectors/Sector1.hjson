@@ -1,0 +1,15 @@
+planet: rarearth
+name: "Sector 1"
+
+description:"Este planeta es raro, por suerte, conseguimos algunos recursos para hacer un nuevo nucleo y mandarlo a este sector. Investiga lo que sea que hay en este lugar."
+
+details:"Este planeta le pondremos rarearth como nombre."
+
+sector: 1
+captureWave: 15
+research: {
+    parent: core-j1
+}
+difficulty: 1
+alwaysUnlocked: true
+overrideLaunchDefaults: true

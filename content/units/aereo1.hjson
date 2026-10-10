@@ -1,0 +1,59 @@
+name: "Aereo split"
+description: "Una unidad aerea debil."
+type: flying
+lowAltitude: true
+speed: 5
+accel: 0.1
+drag: 0.2
+flying: true
+health: 375
+hitSize: 8
+armor: 2
+itemCapacity: 0
+outlineColor: 0C004C
+engineOffset: 5.5
+faceTarget: true
+
+targetFlags: [
+  generator
+  factory
+  core
+]
+
+range: 32
+weapons: [
+  {
+    name: aereo1-gun
+    mirror: false
+    x: 0
+    y: 0
+    shootY: 4
+    layerOffset: -1
+    reload: 20
+    recoil: 2
+    inaccuracy: 6
+    shootSound: shoot
+    bullet: {
+      speed: 5
+      lifetime: 20
+      damage: 12
+      pierce: false
+      pierceBuilding: false
+      pierceCap: 1
+      width: 5
+      height: 10
+      frontColor: 03f8fc
+      backColor: ff2121
+      despawnHit: true
+      despawnEffect: none
+      
+    }
+  }
+ ] 
+research: {
+  parent: constructor-a
+	requirements: [
+    azultio/100
+    verdelium/150
+    ]
+	}

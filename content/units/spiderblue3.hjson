@@ -1,0 +1,153 @@
+name: "Lancero"
+description: "Una unidad que puede disparar un rasho petrificador, con unas torretas de apoyo."
+armor: 50
+speed: 1
+accel: 0.1
+buildSpeed: 0
+health: 2280
+drawCell: true
+itemCapacity: 40
+isEnemy: true
+outlineColor: 0C004C
+type: legs
+rotateSpeed: 2
+immunities:[
+  "petrificado"
+]
+
+flying: false
+hitSize: 16
+targetAir: true
+targetGround: true
+
+legMoveSpace: 1
+legMaxLength: 1.4
+legMinLength: 0.4
+legLengthScl: 1
+legForwardScl: 0.8
+legPhysicsLayer: true
+
+legGroupSize: 3
+legCount: 6
+legExtension: 0
+legContinuousMove: false
+lockLegBase: false
+rippleScale: 0.3
+legBaseOffset: 6
+legLength: 24
+
+legSplashDamage: 0
+//drawLayer: 70
+groundLayer: 70
+shadowElevation:0.5
+hovering: true
+stepShake: 0.0
+
+range:96
+weapons: [
+  {
+  name: spiderblue3-weapon1
+  minWarmup: 0.50
+  mirror: true
+  x: 4
+  y: 5
+  reload: 15
+	outline: true
+	shake: 0
+	top: true
+	ejectEffect: shootSmall
+	rotate: true
+	rotationLimit: 80
+	rotateSpeed: 1.5
+	shootSound: shoot
+	shootY: 16
+  bullet: {
+	  type: BasicBulletType
+	  width: 10
+  	shrinkX: 0
+  	height: 10
+  	shrinkY: 0
+  	speed: 7
+  	drag: 0.02
+  	damage: 30
+  	lifetime: 30
+	  //backColor: 1a1a1a
+	  //frontColor: 525252
+	  hitEffect: none
+
+	  despawnEffect: none
+	  trailColor: ff4527
+	  trailChance: 1
+	  trailWidth: 3
+	  trailLength: 4
+	
+  	fragBullets: 3
+  	fragVelocityMin:1
+    fragVelocityMax:2
+  	fragRandomSpread: 180
+  	//fragAngle: 25
+  	fragBullet: {
+  		type: BasicBulletType
+  	  width: 7
+  		shrinkX: 0
+  		height: 7
+  		shrinkY: 0
+  	  speed: 4.5
+  		drag: 0.05
+  		damage: 20
+  		splashDamage: 0
+  		splashDamageRadius: 0
+  		lifetime: 30
+  	  //	backColor: 1a1a1a
+  	  //	frontColor: 525252
+  		hitEffect: none
+  		despawnEffect: none
+  		}
+    }
+  }
+  {
+  name: spiderblue3-weapon2
+  minWarmup: 0.50
+  mirror: false
+  x: 0
+  y: 0
+  reload: 120
+	outline: true
+	shake: 3
+	top: true
+	ejectEffect: shootSmall
+	rotate: true
+	rotationLimit: 50
+	rotateSpeed: 3
+  
+	shootSound: laser
+	shootY: 12
+  bullet: {
+	  type: LaserBulletType
+    damage: 70
+    length: 120
+    width: 14
+    lifetime: 12
+
+    status: petrificado
+    statusDuration: 100
+    
+    sideLength: 20
+    sideWidth: 1.5
+    sideAngle: 45
+      
+    colors: ["f2ffb2", "3f992d", "99cc66"]
+      
+    hitEffect: hitLancer
+    healPercent: 0
+    }
+  }
+]
+research: {
+  parent: reconstructor-a
+	requirements: [
+    azultio/300
+    verdelium/200
+    amarinium/200
+    ]
+	}

@@ -1,0 +1,76 @@
+name: "Bomb-go"
+description: "Una unidad que explota en contacto con otra unidad o extructura, util contra [yellow]defensas[white]"
+details:"Todo es risas y diversión, asta que ves varios de estos destruir tus defensas."
+type: tank
+
+controller: SuicideAI
+
+hitSize: 14
+treadPullOffset: 0
+treadFrames: 8
+omniMovement: false,
+faceTarget: false,
+targetGround: true
+
+targetBuildingsMobile: true
+autoFindTarget: true
+
+health: 1000,
+armor: 0,
+speed: 1.75,
+rotateSpeed: 3.5
+itemCapacity: 0
+"outlineColor": "44413c",
+drawLayer: 59
+treadRects: [
+  {
+    x: 8
+    y: -24
+    width: 12
+    height: 48
+  }
+]
+
+targetBuildings: true
+range: 8
+weapons: [
+  {
+    name: kamicaze1-gun
+    reload: 1
+    shootCone: 180
+    ejectEffect: none
+    shootSound: explosion
+    x: 0
+    y: 0
+    mirror: false
+    
+    targetGround: true
+    shootAndMove: true
+    shootOnDeath: true
+    
+    bullet: {
+      type: BombBulletType
+      rangeOverride: 16
+      speed: 0
+      lifetime: 1
+      #damage:100
+      splashDamage: 300
+      splashDamageRadius: 64
+      //instantDisappear: true
+      collides: true
+      collidesTiles: true
+      collidesGround: true
+      hittable: false
+      killShooter: true
+      hitEffect: massiveExplosion
+      despawnEffect: massiveExplosion
+    }
+  }
+]
+research: {
+  parent: constructor-a
+	requirements: [
+    azultio/300
+    verdelium/400
+    ]
+	}

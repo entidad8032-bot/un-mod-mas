@@ -1,0 +1,26 @@
+name:"Tanque de liquidos"
+description: "Almacena liquidos."
+type: LiquidRouter
+health: 400
+size:2
+liquidCapacity: 1000
+category: liquid
+placeableLiquid: false
+hasPower: false
+requirements: [
+  amarinium/75
+  azultio/50
+]
+research: {
+    parent: amarinium-pump
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Sector4"
+        }
+    ]
+}
+researchCost: [
+    amarinium/600
+    azultio/800
+  ]

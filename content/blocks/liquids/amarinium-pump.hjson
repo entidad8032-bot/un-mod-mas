@@ -1,0 +1,33 @@
+name: "Bomba de Amarinium"
+description: "Bombea liquidos."
+
+type: Pump
+health: 300
+size: 2
+pumpAmount: 0.2
+liquidCapacity: 100
+squareSprite: false
+category: liquid
+
+hasPower: true
+consumes: {
+  power: 1
+}
+
+requirements: [
+  amarinium/40
+  azultio/20
+]
+research: {
+  parent: core-j1
+  objectives: [
+    {
+      type: OnSector
+      preset: Sector3
+    }
+  ]
+  requirements: [
+    amarinium/80
+    azultio/40
+  ]
+}

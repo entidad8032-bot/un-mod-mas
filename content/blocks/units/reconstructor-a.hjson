@@ -1,0 +1,49 @@
+name: "Reconstructor basico A"
+description: "Una estructura que combierte unidades basicas a unidades mejores."
+type: Reconstructor
+
+health: 1000
+size: 3
+constructTime: 1000
+liquidCapacity: 60
+consumes: {
+  power: 2
+    items: {
+      items: [
+        amarinium/30
+        verdelium/40
+        azultio/40
+      ]
+    }
+  liquid: {
+    liquid: violetio
+    amount: 0.6
+  }
+}
+
+upgrades: [
+  [spiderblue1, spiderblue2]
+  [aereo1, aereo2]
+  [kamicaze1, kamicaze2]
+]
+
+requirements: [
+  verdelium/350
+  azultio/225
+  amarinium/200
+]
+category: units
+research: {
+  parent: constructor-a
+  objectives: [
+    {
+      type: OnSector
+      preset: Sector3
+    }
+  ]
+  requirements: [
+    verdelium/650
+    azultio/450
+    amarinium/350
+  ]
+}

@@ -1,0 +1,15 @@
+type: Floor
+name: "Violetio profundo"
+
+isLiquid: true
+liquidDrop: violetio
+liquidMultiplier: 2.5
+
+speedMultiplier: 0.6
+status: wet
+statusDuration: 120
+drownTime: 200
+walkSound: mud
+
+variants: 2
+cacheLayer: water

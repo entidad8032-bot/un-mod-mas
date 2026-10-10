@@ -1,0 +1,64 @@
+name:"Horno de verdelium"
+description: "Un horno que combierte verdelium en amarinium
+utilizando rojozio como mesclador."
+type: GenericCrafter
+category: crafting
+health: 200
+size:2
+
+hasItems: true
+craftTime: 60
+hasPower: true
+consumes: {
+  power: 1.5
+  items: [
+    verdelium/2
+    rojozio/1
+  ]
+}
+outputItem: amarinium/1
+
+drawer: {
+  type: DrawMulti
+  drawers:[
+    {
+    type: DrawRegion
+    suffix: -bottom
+    }
+    {
+    type: DrawFlame
+    flameColor:ff8b0a
+    flameRadius: 3.5
+    flameRadiusIn: 1.2
+    flameRadiusMaf:0.6
+    }
+    {
+    type: DrawParticles
+    color:fef23e
+    particles: 5
+    particleLife: 20
+    particleRad: 4
+    particleSize: 1.5
+    rotateScl: 3
+    }
+    {
+    type: DrawDefault
+    }
+    {
+    type: DrawRegion
+    suffix: -top
+    }
+  ]
+}
+
+research: {
+  parent: core-j1
+  requirements: [
+    verdelium/175
+    azultio/150
+    ]
+}
+requirements: [
+  verdelium/125
+  azultio/100
+]

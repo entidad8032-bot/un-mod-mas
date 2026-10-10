@@ -1,0 +1,30 @@
+name: "Nodo de energia grande"
+description: "Un nodo que transporta energia a mayor distancia."
+type: PowerNode
+size: 2
+health: 150
+maxNodes: 14
+laserRange: 18
+laserColor1: fff46c
+laserColor2: 5e2100
+category: power
+consumes: {
+    powerBuffered: 200
+}
+requirements: [
+  verdelium/15
+  azultio/15
+]
+research: {
+  parent: node
+  objectives: [
+    {
+      type: OnSector
+      preset: Sector3
+    }
+  ]
+  requirements: [
+    verdelium/130
+    azultio/130
+  ]
+}

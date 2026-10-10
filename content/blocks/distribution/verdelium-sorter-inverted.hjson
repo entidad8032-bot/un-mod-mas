@@ -1,0 +1,16 @@
+name:"Clasificador invertido de Verdelium"
+description:"Deja pasar el objeto seleccionado a los lados y los otros a al frente."
+
+type: Sorter
+health: 100
+invert: true
+requirements: [
+  verdelium/5
+  azultio/5
+] 
+category: distribution
+research: verdelium-sorter
+researchCost: [
+    verdelium/50
+    azultio/50
+  ]

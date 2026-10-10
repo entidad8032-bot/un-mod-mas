@@ -1,0 +1,16 @@
+name:"Enrutador de liquidos"
+description: "Distribulle liquidos en otras direcciones."
+type: LiquidRouter
+health: 100
+liquidCapacity: 20
+category: liquid
+botColor: 660000
+placeableLiquid: true
+hasPower: false
+requirements: [
+  amarinium/5
+]
+research: amarinium-pip
+researchCost: [
+    amarinium/20
+  ]

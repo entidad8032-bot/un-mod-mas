@@ -1,0 +1,15 @@
+type:Wall
+name:"Muro de verdelium grande"
+armor:6
+description:"Protege extructuras de proyectiles enemigos."
+health: 1200
+size: 2
+category: defense
+requirements: [
+  verdelium/40
+]
+research:"verdelium-wall-small"
+
+researchCost: [
+    verdelium/ 80
+]

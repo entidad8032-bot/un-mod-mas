@@ -1,0 +1,17 @@
+type: ItemBridge
+name: "Puente verdelium"
+description: "Un puente que transporta objetos de un punto a otro."
+  "health": 100,
+  "range": 4,
+  "transportTime": 2,
+  "hasPower": false,
+requirements: [
+  verdelium/10
+] 
+category: distribution
+research: {
+  parent: verdelium-duct
+  requirements: [
+    verdelium/50
+    ]
+}

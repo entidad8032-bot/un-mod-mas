@@ -1,0 +1,4 @@
+type: TallBlock
+variants:2
+//customShadow: true
+clipSize: 96

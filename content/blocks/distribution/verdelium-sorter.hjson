@@ -1,0 +1,15 @@
+name:"Clasificador de Verdelium"
+description:"Deja pasar el objeto seleccionado al frente y los otros a los lados."
+
+type: Sorter
+health: 100
+requirements: [
+  verdelium/5
+  azultio/5
+]
+category: distribution
+research: verdelium-router
+researchCost: [
+    verdelium/50
+    azultio/50
+  ]

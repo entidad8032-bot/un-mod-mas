@@ -1,0 +1,44 @@
+name: "Bateria de Amarinium"
+description: "Una bateria que almacena energia."
+type: battery
+size: 2
+fullLightColor: "35fff8"
+emptyLightColor: "000000"
+hasPower: true
+outputsPower": true
+consumesPower": true
+hasItems: false
+canOverdrive: false
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}
+consumes: {
+    powerBuffered: 1500
+}
+category: power
+requirements: [
+  amarinium/35
+  azultio/30
+]
+research: {
+  parent: amarinium-generator
+  objectives: [
+    {
+      type: OnSector
+      preset: Sector3
+    }
+  ]
+  requirements: [
+    amarinium/200
+    azultio/700
+  ]
+}

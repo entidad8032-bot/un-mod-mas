@@ -1,0 +1,22 @@
+type:Wall
+name:"Muro de amarinium"
+armor:6
+description:"Protege extructuras de proyectiles enemigos"
+health: 800
+size: 1
+category: defense
+requirements: [
+  amarinium/20
+]
+research: {
+    parent: "verdelium-wall-small",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "Sector2"
+        }
+    ]
+}
+researchCost: [
+    amarinium/40
+]

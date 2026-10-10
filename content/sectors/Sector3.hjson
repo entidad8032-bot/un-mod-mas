@@ -1,0 +1,23 @@
+planet: rarearth
+name: "Rios Violetas"
+
+description:"Este sector contiene rios de agua violeta 
+junto a una base enemiga, investiga unidades y formas de usar liquidos"
+
+details: "Las plantas de este sector huelen horrible,
+que bueno que las unidades no son capaces de oler"
+
+sector: 3
+research: {
+  parent: Sector2
+  objectives: [
+    {
+      type: "SectorComplete",
+      preset: "Sector2"
+    }
+  ]
+}
+difficulty: 4
+alwaysUnlocked: true
+overrideLaunchDefaults: true
+allowLaunchSchematics:true

@@ -1,0 +1,14 @@
+type: Floor
+name: "Violetio"
+
+isLiquid: true
+liquidDrop: violetio
+liquidMultiplier: 2
+
+shallow: true
+speedMultiplier: 0.8
+status: wet
+walkSound: mud
+
+variants: 2
+cacheLayer: water
