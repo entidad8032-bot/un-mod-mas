@@ -26,7 +26,7 @@ targetAir: true
 canBoost:true
 boostSpeed:1
 
-controller: RebuildAI
+controller: BuilderAI
 commandable:true
 
 itemCapacity: 25
