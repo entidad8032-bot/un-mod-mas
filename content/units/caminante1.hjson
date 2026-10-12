@@ -9,7 +9,7 @@ hitSize: 12
 health: 400
 faceTarget: true
 armor: 3
-range: 100
+range: 75
 rotateSpeed: 3
 outlineColor: 0c004c
 mechFrontSway: 0.3
