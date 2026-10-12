@@ -25,6 +25,14 @@ requirements: [
 
 research: {
   parent: core-j1
+  objectives: [
+    verdelium-generator
+    horno-verdelium
+        {
+            type: "OnSector",
+            preset: "ParedesRojas"
+        }
+    ]
   requirements: [
     verdelium/40
     azultio/160

@@ -93,6 +93,6 @@ research: {
     ]
 }
 researchCost: [
-  azultio/700
-  amarinium/500
+  azultio/1000
+  amarinium/1000
   ]

@@ -20,7 +20,7 @@ targetFlags: [
   core
 ]
 
-range: 32
+range: 100
 weapons: [
   {
     name: aereo1-gun
@@ -53,7 +53,7 @@ weapons: [
 research: {
   parent: constructor-a
 	requirements: [
-    azultio/100
-    verdelium/150
+    azultio/500
+    verdelium/500
     ]
 	}

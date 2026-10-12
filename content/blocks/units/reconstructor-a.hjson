@@ -38,7 +38,7 @@ research: {
   objectives: [
     {
       type: OnSector
-      preset: Sector3
+      preset: Sector4
     }
   ]
   requirements: [

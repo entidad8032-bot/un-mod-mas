@@ -8,7 +8,7 @@ health: 380
 drawCell: true
 itemCapacity: 10
 isEnemy: true
-outlineColor: 0C004C
+outlineColor: 0c004c
 type: legs
 rotateSpeed: 3
 
@@ -85,7 +85,7 @@ weapons: [
 research: {
   parent: constructor-a
 	requirements: [
-    azultio/150
-    verdelium/100
+    azultio/600
+    verdelium/600
     ]
 	}

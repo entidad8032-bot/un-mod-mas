@@ -9,15 +9,15 @@ que bueno que las unidades no son capaces de oler"
 
 sector: 3
 research: {
-  parent: Sector2
+  parent: ParedesRojas
   objectives: [
     {
       type: "SectorComplete",
-      preset: "Sector2"
+      preset: "ParedesRojas"
     }
   ]
 }
 difficulty: 4
-alwaysUnlocked: true
+alwaysUnlocked: false
 overrideLaunchDefaults: true
 allowLaunchSchematics:true

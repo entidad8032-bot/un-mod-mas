@@ -30,7 +30,7 @@ research: {
   objectives: [
     {
       type: OnSector
-      preset: Sector1
+      preset: "Inicio"
     }
   ]
 }

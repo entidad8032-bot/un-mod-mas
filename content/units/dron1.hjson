@@ -1,10 +1,10 @@
 name: "Dron bot"
-description: Una unidad aerea de apoyo encargada de construir, minar y protegerel núcleo.
+description: Una unidad aerea de apoyo encargada de construir, minar y proteger el núcleo.
 type: flying
 
 controller: BuilderAI
 //defaultCommand: rebuild
-
+outlineColor: 0c004c
 health: 400
 armor: 5
 speed: 3.85

@@ -53,6 +53,12 @@ drawer: {
 
 research: {
   parent: core-j1
+  objectives: [
+        {
+            type: "OnSector",
+            preset: "ParedesRojas"
+        }
+    ]
   requirements: [
     verdelium/175
     azultio/150

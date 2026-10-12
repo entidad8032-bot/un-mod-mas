@@ -7,11 +7,11 @@ investiga alguna formade generar energía."
 sector: 2
 captureWave: 30
 research: {
-  parent: Sector1
+  parent: Inicio
   objectives: [
     {
       type: "SectorComplete",
-      preset: "Sector1"
+      preset: "Inicio"
     }
   ]
 }

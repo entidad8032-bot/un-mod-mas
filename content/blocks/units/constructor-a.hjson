@@ -45,7 +45,7 @@ research: {
     amarinium-generator
     {
       type: OnSector
-      preset: Sector3
+      preset:"RiosVioletas"
     }
   ]
   requirements: [

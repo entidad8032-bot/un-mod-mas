@@ -13,7 +13,7 @@ research: {
     objectives: [
         {
             type: "OnSector",
-            preset: "Sector2"
+            preset: "ParedesRojas"
         }
     ]
 }

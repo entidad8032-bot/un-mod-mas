@@ -44,8 +44,8 @@ consumes: {
   ]
 }
 requirements: [
-  verdelium/150
-  azultio/125
+  verdelium/125
+  azultio/100
 ]
 
 research: {
@@ -53,7 +53,7 @@ research: {
   objectives: [
     {
       type: OnSector
-      preset: Sector2
+      preset: "ParedesRojas"
     }
   ]
   requirements: [

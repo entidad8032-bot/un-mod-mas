@@ -14,7 +14,7 @@ research: {
     objectives: [
         {
             type: "OnSector",
-            preset: "Sector3"
+            preset: "RiosVioletas"
         }
     ]
 }

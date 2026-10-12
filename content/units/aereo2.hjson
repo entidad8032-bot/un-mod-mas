@@ -21,7 +21,7 @@ targetFlags: [
   core
 ]
 
-range: 32
+range: 100
 weapons: [
   {
     name: aereo1-gun

@@ -9,11 +9,11 @@ details:"Este planeta es tan raro que parece artificial... oye..."
 sector: 4
 captureWave: 20
 research: {
-  parent: Sector3
+  parent: RiosVioletas
   objectives: [
     {
       type: "SectorComplete",
-      preset: "Sector3"
+      preset: "RiosVioletas"
     }
   ]
 }

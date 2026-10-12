@@ -1,7 +1,7 @@
 name:"Rojozio"
 description: "Un mineral rojo carmesí usado como combustible de maquinas,
 tambien se puede refinar para hacerlo combustible líquido.
-Altamente volatil."
+Volatil."
 type:item
 cost: 1
 color: 7F1919

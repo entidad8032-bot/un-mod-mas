@@ -20,7 +20,7 @@ armor: 0,
 speed: 1.75,
 rotateSpeed: 3.5
 itemCapacity: 0
-"outlineColor": "44413c",
+outlineColor: 0c004c
 drawLayer: 59
 treadRects: [
   {
@@ -70,7 +70,7 @@ weapons: [
 research: {
   parent: constructor-a
 	requirements: [
-    azultio/300
-    verdelium/400
+    azultio/800
+    verdelium/800
     ]
 	}
